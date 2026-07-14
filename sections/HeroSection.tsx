@@ -21,30 +21,30 @@ function SocialProofCard() {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, delay: 1.2 }}
-      className="glass rounded-full px-5 py-3 flex items-center gap-3"
+      className="glass rounded-full px-6 py-3.5 flex items-center gap-3.5"
     >
-      <div className="flex -space-x-2">
+      <div className="flex -space-x-2.5">
         {avatars.map((src, i) => (
           <div
             key={i}
-            className="relative h-8 w-8 overflow-full rounded-full border-2 border-white/50"
+            className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-white/50"
           >
             <Image
               src={src}
               alt=""
               fill
-              sizes="32px"
+              sizes="36px"
               className="object-cover"
             />
           </div>
         ))}
-        <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white/50 bg-champagne text-[10px] font-medium text-white">
+        <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-white/50 bg-champagne text-[11px] font-medium text-white">
           +
         </div>
       </div>
       <div>
-        <span className="block text-sm font-semibold text-white">{hero.socialProofCount}</span>
-        <span className="block text-[10px] text-white/70">{hero.socialProofText}</span>
+        <span className="block text-base font-semibold text-white">{hero.socialProofCount}</span>
+        <span className="block text-[11px] text-white/70">{hero.socialProofText}</span>
       </div>
     </motion.div>
   );
@@ -58,25 +58,25 @@ function FeaturedProductCard() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 1.5 }}
-      className="glass-dark rounded-3xl p-3 flex items-center gap-4 max-w-[320px]"
+      className="glass-dark rounded-3xl p-4 flex items-center gap-5 max-w-[360px]"
     >
-      <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl">
+      <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
         <Image
           src={hero.featuredProductImage}
           alt="Featured jewelry piece"
           fill
-          sizes="80px"
+          sizes="96px"
           className="object-cover"
         />
       </div>
-      <div className="pr-3">
-        <p className="text-sm font-medium text-white leading-tight">{hero.featuredProductTitle}</p>
+      <div className="pr-4">
+        <p className="text-[15px] font-medium text-white leading-tight">{hero.featuredProductTitle}</p>
         <Link
           href="#collection"
-          className="mt-1.5 inline-flex items-center gap-1 text-xs text-champagne transition-colors hover:text-champagne-light"
+          className="mt-2 inline-flex items-center gap-1.5 text-xs text-champagne transition-colors hover:text-champagne-light"
         >
           Read More
-          <ArrowRight className="h-3 w-3" aria-hidden="true" />
+          <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
         </Link>
       </div>
     </motion.div>
@@ -100,13 +100,13 @@ export function HeroSection() {
       aria-labelledby="hero-heading"
     >
       <div className="flex min-h-[85vh]">
-        {/* Left Column - Solid beige background */}
-        <div className="relative z-10 flex w-full flex-col justify-center bg-[#C4AE89] px-6 py-20 sm:px-10 lg:w-[45%] lg:px-14 xl:w-[42%] xl:px-20">
+        {/* Left Column - Deep chocolate brown background */}
+        <div className="relative z-10 flex w-full flex-col justify-center bg-[#3A2E2B] px-6 py-20 sm:px-10 lg:w-[45%] lg:px-14 xl:w-[42%] xl:px-20">
           <motion.p
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="text-[10px] uppercase tracking-[0.35em] text-white/70"
+            className="text-[10px] uppercase tracking-[0.35em] text-white/60"
           >
             {brand.name}
           </motion.p>
@@ -129,11 +129,11 @@ export function HeroSection() {
           >
             <Link
               href="#collection"
-              className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-medium text-charcoal transition-all duration-300 hover:shadow-luxury-lg hover:scale-[1.02]"
+              className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-sm font-medium text-[#3A2E2B] transition-all duration-300 hover:shadow-luxury-lg hover:scale-[1.02]"
             >
               {hero.primaryCta}
             </Link>
-            <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/40 text-white transition-all duration-300 hover:bg-white/10 hover:border-white/60">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all duration-300 hover:bg-white/10 hover:border-white/50">
               <ArrowRight className="h-5 w-5" aria-hidden="true" />
             </span>
           </motion.div>
@@ -144,10 +144,10 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mt-12 max-w-sm"
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-white/60">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-white/50">
               {hero.subtextLabel}
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-white/70">
+            <p className="mt-3 text-sm leading-relaxed text-white/60">
               {hero.subtextDescription}
             </p>
           </motion.div>
@@ -157,12 +157,12 @@ export function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.1 }}
-            className="mt-16 flex flex-wrap gap-6 text-[10px] uppercase tracking-[0.2em] text-white/40"
+            className="mt-16 flex flex-wrap gap-6 text-[10px] uppercase tracking-[0.2em] text-white/35"
           >
             <span>GIA Certified</span>
-            <span className="h-3 w-px bg-white/20" aria-hidden="true" />
+            <span className="h-3 w-px bg-white/15" aria-hidden="true" />
             <span>Assay Verified</span>
-            <span className="h-3 w-px bg-white/20" aria-hidden="true" />
+            <span className="h-3 w-px bg-white/15" aria-hidden="true" />
             <span>Lifetime Warranty</span>
           </motion.div>
         </div>
@@ -183,16 +183,16 @@ export function HeroSection() {
             />
           </motion.div>
 
-          {/* Gradient overlays for depth */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#C4AE89]/40 via-transparent to-transparent pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
+          {/* Warm tint overlay for color harmony */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#3A2E2B]/20 via-[#CBB281]/5 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-black/5 pointer-events-none" />
 
-          {/* Overlay Cards */}
-          <div className="absolute inset-0 flex flex-col justify-between p-8 xl:p-12">
-            <div className="flex justify-end">
+          {/* Overlay Cards - properly inset with breathing room */}
+          <div className="absolute inset-0 flex flex-col justify-between">
+            <div className="flex justify-end pt-[15%] pr-[5%]">
               <SocialProofCard />
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end pb-[10%] pr-[8%]">
               <FeaturedProductCard />
             </div>
           </div>
@@ -208,7 +208,7 @@ export function HeroSection() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-[#C4AE89]/85" />
+          <div className="absolute inset-0 bg-[#3A2E2B]/88" />
         </div>
       </div>
     </section>

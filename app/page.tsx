@@ -2,7 +2,9 @@ import { Header } from "@/components/layout/Header";
 import { Footer, MobileConciergeRibbon } from "@/components/layout/Footer";
 import { PageReveal } from "@/components/shared/MotionWrapper";
 import { HeroSection } from "@/sections/HeroSection";
+import { USPRow } from "@/sections/USPRow";
 import { CollectionsGrid } from "@/sections/CollectionsGrid";
+import { ChooseTypeSection } from "@/sections/ChooseTypeSection";
 import { MasterCollection } from "@/sections/MasterCollection";
 import { BespokePipeline } from "@/sections/BespokePipeline";
 import { CraftsmanshipStandard } from "@/sections/CraftsmanshipStandard";
@@ -17,7 +19,9 @@ export default function Home() {
       <Header />
       <main id="main-content">
         <HeroSection />
+        <USPRow />
         <CollectionsGrid />
+        <ChooseTypeSection />
         <MasterCollection />
         <BespokePipeline />
         <CraftsmanshipStandard />

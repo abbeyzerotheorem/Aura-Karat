@@ -165,5 +165,13 @@ export type JewelryConfig = {
     ringSizer: { eyebrow: string; title: string; description: string };
     faq: { eyebrow: string; title: string };
     trust: { eyebrow: string; title: string; description: string };
+    usp: { items: { icon: string; label: string; description: string }[] };
+    chooseType: {
+      eyebrow: string;
+      title: string;
+      subtitle: string;
+      imagePath: string;
+      categories: { label: string; href: string }[];
+    };
   };
 };

@@ -66,14 +66,14 @@ export function Header() {
 
         {/* Desktop Pill Navigation */}
         <nav
-          className="nav-pill hidden items-center gap-1 px-2 py-1.5 lg:flex"
+          className="nav-pill hidden items-center gap-1 px-3 py-2 lg:flex"
           aria-label="Main navigation"
         >
           {navLinks.map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
-              className="group relative rounded-full px-5 py-2 text-xs uppercase tracking-[0.15em] text-charcoal/70 transition-colors hover:bg-charcoal/5 hover:text-charcoal"
+              className="group relative rounded-full px-6 py-2.5 text-[13px] uppercase tracking-[0.15em] text-charcoal/70 transition-colors hover:bg-charcoal/5 hover:text-charcoal"
               style={{ transitionDelay: `${i * 30}ms` }}
             >
               {link.label}
@@ -88,10 +88,10 @@ export function Header() {
           >
             <button
               type="button"
-              className="group flex items-center gap-1 rounded-full px-5 py-2 text-xs uppercase tracking-[0.15em] text-charcoal/70 transition-colors hover:bg-charcoal/5 hover:text-charcoal"
+              className="group flex items-center gap-1.5 rounded-full px-6 py-2.5 text-[13px] uppercase tracking-[0.15em] text-charcoal/70 transition-colors hover:bg-charcoal/5 hover:text-charcoal"
             >
               {navigation.pagesLabel}
-              <ChevronDown className={`h-3 w-3 transition-transform duration-200 ${pagesOpen ? "rotate-180" : ""}`} aria-hidden="true" />
+              <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${pagesOpen ? "rotate-180" : ""}`} aria-hidden="true" />
             </button>
             <AnimatePresence>
               {pagesOpen && (
@@ -120,7 +120,7 @@ export function Header() {
 
           <VIPSchedulerModal
             trigger={
-              <Button variant="default" size="sm" className="rounded-full bg-charcoal text-cream hover:bg-onyx px-5">
+              <Button variant="default" size="sm" className="rounded-full bg-charcoal text-cream hover:bg-onyx px-6 py-2.5 text-[13px]">
                 {navigation.contactLabel}
               </Button>
             }

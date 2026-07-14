@@ -11,13 +11,13 @@ export function CraftsmanshipStandard() {
   return (
     <section
       id="heritage"
-      className="py-24 md:py-32"
+      className="py-28 md:py-36"
       aria-labelledby="heritage-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
           <MotionWrapper variant="scaleIn">
-            <div className="relative aspect-[4/5] overflow-hidden border border-whisper shadow-luxury-lg group">
+            <div className="relative aspect-[4/5] overflow-hidden border border-whisper bg-whisper shadow-luxury-lg group">
               <Image
                 src={heritage.imagePath}
                 alt={`Master jeweler hand-finishing a ring at the ${brand.name} atelier`}

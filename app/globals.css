@@ -165,10 +165,10 @@ img {
 
 /* Pill nav container */
 .nav-pill {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-radius: 9999px;
-  box-shadow: 0 4px 24px -4px rgb(13 22 20 / 0.08), 0 1px 3px rgb(13 22 20 / 0.04);
-  border: 1px solid rgb(232 227 218 / 0.6);
+  box-shadow: 0 4px 32px -4px rgb(13 22 20 / 0.1), 0 2px 6px rgb(13 22 20 / 0.05);
+  border: 1px solid rgb(232 227 218 / 0.5);
 }

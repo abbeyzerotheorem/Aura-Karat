@@ -15,7 +15,7 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-24 md:py-32"
+      className="py-28 md:py-36"
       aria-labelledby="faq-heading"
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

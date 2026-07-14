@@ -11,7 +11,7 @@ export function CollectionsGrid() {
 
   return (
     <section
-      className="py-24 md:py-32"
+      className="py-28 md:py-36"
       aria-labelledby="collections-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@ export function CollectionsGrid() {
             <StaggerItem
               key={collection.id}
               className={cn(
-                "group relative overflow-hidden border border-whisper shadow-luxury transition-shadow duration-500 hover:shadow-luxury-lg",
+                "group relative overflow-hidden border border-whisper bg-whisper shadow-luxury transition-shadow duration-500 hover:shadow-luxury-lg",
                 collection.span === "wide" && "sm:col-span-2",
                 collection.span === "tall" && "lg:row-span-2 lg:auto-rows-auto"
               )}

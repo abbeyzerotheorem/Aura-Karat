@@ -19,7 +19,7 @@ export function MasterCollection() {
   return (
     <section
       id="collection"
-      className="border-t border-whisper bg-cream py-24 md:py-32"
+      className="border-t border-whisper bg-cream py-28 md:py-36"
       aria-labelledby="master-collection-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -48,7 +48,7 @@ export function RingSizer() {
   return (
     <section
       id="ring-sizer"
-      className="py-24 md:py-32"
+      className="py-28 md:py-36"
       aria-labelledby="ring-sizer-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

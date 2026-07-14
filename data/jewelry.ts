@@ -45,7 +45,7 @@ export const jewelryConfig: JewelryConfig = {
     primaryCta: "Let's Get Started",
     secondaryCta: "Bespoke Creations",
     imagePath:
-      "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1200&h=1500&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&h=1500&fit=crop&q=85",
     lifestyleImagePath:
       "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&h=900&fit=crop&q=85",
     videoPosterPath:
@@ -67,16 +67,16 @@ export const jewelryConfig: JewelryConfig = {
     sectionSubtitle: "The Aura Craftsmanship Standard",
   },
 
-  collections: [
-    {
-      id: "engagement-bridal",
-      title: "Engagement & Bridal",
-      subtitle: "Symbols of forever, sculpted in light",
-      imagePath:
-        "https://images.unsplash.com/photo-1524592314907-9b3d7b8b8b8b?w=800&h=1000&fit=crop&q=85",
-      href: "#collection",
-      span: "wide",
-    },
+    collections: [
+      {
+        id: "engagement-bridal",
+        title: "Engagement & Bridal",
+        subtitle: "Symbols of forever, sculpted in light",
+        imagePath:
+          "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=1000&fit=crop&q=85",
+        href: "#collection",
+        span: "wide",
+      },
     {
       id: "fine-rings",
       title: "Fine Rings",
@@ -680,6 +680,42 @@ export const jewelryConfig: JewelryConfig = {
       title: "Trust & Authenticity",
       description:
         "Every piece that leaves our atelier carries documented proof of origin, purity, and craftsmanship—because luxury demands transparency.",
+    },
+    usp: {
+      items: [
+        {
+          icon: "truck",
+          label: "Free Shipping",
+          description: "Complimentary insured delivery on all orders",
+        },
+        {
+          icon: "gem",
+          label: "Exclusive Design",
+          description: "Unique pieces crafted by master jewelers",
+        },
+        {
+          icon: "gift",
+          label: "Luxury Packaging",
+          description: "Signature lacquered cases for every piece",
+        },
+        {
+          icon: "crown",
+          label: "Highest Quality",
+          description: "GIA-certified stones and assay-verified metals",
+        },
+      ],
+    },
+    chooseType: {
+      eyebrow: "Find Your Style",
+      title: "Choose The Type!",
+      subtitle: "Explore our curated categories to find the perfect piece that speaks to your style and story.",
+      imagePath:
+        "https://images.unsplash.com/photo-1611652022418-a9419f74343d?w=800&h=1000&fit=crop&q=85",
+      categories: [
+        { label: "Ring", href: "#collection" },
+        { label: "Necklace", href: "#collection" },
+        { label: "Bracelet", href: "#collection" },
+      ],
     },
   },
 };

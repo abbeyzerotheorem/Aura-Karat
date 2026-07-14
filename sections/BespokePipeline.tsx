@@ -13,7 +13,7 @@ export function BespokePipeline() {
   return (
     <section
       id="bespoke"
-      className="border-y border-whisper py-24 md:py-32"
+      className="border-y border-whisper py-28 md:py-36"
       aria-labelledby="bespoke-heading"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
