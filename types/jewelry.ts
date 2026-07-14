@@ -16,7 +16,6 @@ export type StoneOption = {
 export type ProductImagePaths = {
   primary: string;
   hover: string;
-  lifestyle: string;
   alt: string;
 };
 
@@ -97,19 +96,13 @@ export type JewelryConfig = {
     boutiqueAddress: string;
     city: string;
     phone: string;
-    whatsapp: string;
     email: string;
-    mapCoordinates: { lat: number; lng: number };
     storeHours: StoreHours[];
   };
   hero: {
     headline: string;
-    subheadline: string;
     primaryCta: string;
-    secondaryCta: string;
     imagePath: string;
-    lifestyleImagePath: string;
-    videoPosterPath: string;
     subtextLabel: string;
     subtextDescription: string;
     socialProofText: string;
@@ -130,8 +123,6 @@ export type JewelryConfig = {
   faqs: FAQItem[];
   ringSizeGuide: RingSizeGuide[];
   promotional: {
-    bannerEnabled: boolean;
-    bannerText: string;
     shippingDisclaimer: string;
     securityDisclaimer: string;
   };

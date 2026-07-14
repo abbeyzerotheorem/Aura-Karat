@@ -24,9 +24,7 @@ export const jewelryConfig: JewelryConfig = {
     boutiqueAddress: "742 Madison Avenue, Suite 12",
     city: "New York, NY 10065",
     phone: "+1 (212) 555-0147",
-    whatsapp: "+12125550147",
     email: "concierge@auraandkarat.com",
-    mapCoordinates: { lat: 40.7736, lng: -73.9662 },
     storeHours: [
       { day: "Monday", hours: "10:00 AM – 6:00 PM" },
       { day: "Tuesday", hours: "10:00 AM – 7:00 PM" },
@@ -40,16 +38,9 @@ export const jewelryConfig: JewelryConfig = {
 
   hero: {
     headline: "Our Luxury Collections",
-    subheadline:
-      "Hand-finished fine jewelry where centuries-old bench craft meets contemporary design. Each piece is assayed, certified, and destined to become your family's next chapter.",
     primaryCta: "Let's Get Started",
-    secondaryCta: "Bespoke Creations",
     imagePath:
       "/hero.jpeg",
-    lifestyleImagePath:
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&h=900&fit=crop&q=85",
-    videoPosterPath:
-      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200&h=800&fit=crop&q=85",
     subtextLabel: "// Aura & Karat Jewelry Store",
     subtextDescription:
       "Discover our curated collections of handcrafted fine jewelry, featuring ethically sourced gemstones and recycled precious metals from our Madison Avenue atelier.",
@@ -156,11 +147,9 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1605100804763-247d67f77de9?w=800&h=1000&fit=crop&q=85",
+          "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&h=1000&fit=crop&q=85",
         hover:
           "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=1000&fit=crop&q=85",
-        lifestyle:
-          "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=1000&fit=crop&q=85",
         alt: "Elara Solitaire Ring in yellow gold with brilliant-cut diamond",
       },
     },
@@ -216,8 +205,6 @@ export const jewelryConfig: JewelryConfig = {
           "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&h=1000&fit=crop&q=85",
         hover:
           "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&h=1000&fit=crop&q=85",
-        lifestyle:
-          "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&h=1000&fit=crop&q=85",
         alt: "Celeste Pendant Necklace with sapphire center stone",
       },
     },
@@ -273,8 +260,6 @@ export const jewelryConfig: JewelryConfig = {
           "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=1000&fit=crop&q=85",
         hover:
           "/heritage.jpeg",
-        lifestyle:
-          "https://images.unsplash.com/photo-1602751584552-8ba73aad10e2?w=800&h=1000&fit=crop&q=85",
         alt: "Aurora Eternity Band with micro-pavé diamonds",
       },
     },
@@ -327,11 +312,9 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1611652022418-a9419f74343d?w=800&h=1000&fit=crop&q=85",
+          "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&h=1000&fit=crop&q=85",
         hover:
           "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=1000&fit=crop&q=85",
-        lifestyle:
-          "https://images.unsplash.com/photo-1617032215425-0d7d7b8b8b8b?w=800&h=1000&fit=crop&q=85",
         alt: "Heritage Signet Ring in yellow gold",
       },
     },
@@ -387,8 +370,6 @@ export const jewelryConfig: JewelryConfig = {
           "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&h=1000&fit=crop&q=85",
         hover:
           "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&h=1000&fit=crop&q=85",
-        lifestyle:
-          "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=1000&fit=crop&q=85",
         alt: "Lumière Drop Earrings with South Sea pearls",
       },
     },
@@ -423,9 +404,7 @@ export const jewelryConfig: JewelryConfig = {
         primary:
           "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=1000&fit=crop&q=85",
         hover:
-          "https://images.unsplash.com/photo-1605100804763-247d67f77de9?w=800&h=1000&fit=crop&q=85",
-        lifestyle:
-          "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=1000&fit=crop&q=85",
+          "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&h=1000&fit=crop&q=85",
         alt: "Bespoke custom jewelry design process",
       },
     },
@@ -438,7 +417,7 @@ export const jewelryConfig: JewelryConfig = {
       description:
         "Share heirlooms, sketches, or simply a feeling. Our lead designer translates your story into initial concept drawings during a private consultation.",
       imagePath:
-        "https://images.unsplash.com/photo-1452860600605-9556e4d4d138?w=600&h=400&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=600&h=400&fit=crop&q=85",
     },
     {
       step: 2,
@@ -454,7 +433,7 @@ export const jewelryConfig: JewelryConfig = {
       description:
         "Your piece is cast, hand-set, and bench-finished by our master jewelers over 4–6 weeks. Each stage is documented and shared with you.",
       imagePath:
-        "https://images.unsplash.com/photo-1617032215425-0d7d7b8b8b8b?w=600&h=400&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=600&h=400&fit=crop&q=85",
     },
     {
       step: 4,
@@ -597,9 +576,6 @@ export const jewelryConfig: JewelryConfig = {
   ],
 
   promotional: {
-    bannerEnabled: true,
-    bannerText:
-      "Complimentary Secure Shipping & Signature Delivery on All Orders — Custom Design Consultations Available This Week",
     shippingDisclaimer:
       "All orders ship within 3–5 business days via insured, signature-required courier.",
     securityDisclaimer:
@@ -640,7 +616,7 @@ export const jewelryConfig: JewelryConfig = {
       "handcrafted jewelry",
     ],
     ogImage:
-      "https://images.unsplash.com/photo-1605100804763-247d67f77de9?w=1200&h=630&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1200&h=630&fit=crop&q=85",
   },
 
   sections: {
@@ -710,7 +686,7 @@ export const jewelryConfig: JewelryConfig = {
       title: "Choose The Type!",
       subtitle: "Explore our curated categories to find the perfect piece that speaks to your style and story.",
       imagePath:
-        "https://images.unsplash.com/photo-1611652022418-a9419f74343d?w=800&h=1000&fit=crop&q=85",
+        "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&h=1000&fit=crop&q=85",
       categories: [
         { label: "Ring", href: "#collection" },
         { label: "Necklace", href: "#collection" },

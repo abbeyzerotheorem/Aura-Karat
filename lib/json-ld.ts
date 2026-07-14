@@ -18,11 +18,6 @@ export function generateJewelryStoreJsonLd() {
       addressLocality: contact.city,
       addressCountry: "US",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: contact.mapCoordinates.lat,
-      longitude: contact.mapCoordinates.lng,
-    },
     openingHoursSpecification: contact.storeHours.map((entry) => ({
       "@type": "OpeningHoursSpecification",
       dayOfWeek: entry.day,
