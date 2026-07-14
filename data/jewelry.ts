@@ -45,7 +45,7 @@ export const jewelryConfig: JewelryConfig = {
     primaryCta: "Let's Get Started",
     secondaryCta: "Bespoke Creations",
     imagePath:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&h=1500&fit=crop&q=85",
+      "/hero.jpeg",
     lifestyleImagePath:
       "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&h=900&fit=crop&q=85",
     videoPosterPath:
@@ -62,7 +62,7 @@ export const jewelryConfig: JewelryConfig = {
 
   heritage: {
     imagePath:
-      "https://images.unsplash.com/photo-1617032215425-0d7d7b8b8b8b?w=800&h=1000&fit=crop&q=85",
+      "/heritage.jpeg",
     sectionTitle: "Where Heritage Meets Precision",
     sectionSubtitle: "The Aura Craftsmanship Standard",
   },
@@ -272,7 +272,7 @@ export const jewelryConfig: JewelryConfig = {
         primary:
           "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=1000&fit=crop&q=85",
         hover:
-          "https://images.unsplash.com/photo-1617032215425-0d7d7b8b8b8b?w=800&h=1000&fit=crop&q=85",
+          "/heritage.jpeg",
         lifestyle:
           "https://images.unsplash.com/photo-1602751584552-8ba73aad10e2?w=800&h=1000&fit=crop&q=85",
         alt: "Aurora Eternity Band with micro-pavé diamonds",
