@@ -1,15 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, ChevronRight, Phone } from "lucide-react";
 import { jewelryConfig } from "@/data/jewelry";
 import { Button } from "@/components/ui/button";
 import { VIPSchedulerModal } from "@/components/modules/VIPSchedulerModal";
 
 export function Header() {
-  const { brand, navigation } = jewelryConfig;
+  const { brand, navigation, contact } = jewelryConfig;
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const closeNav = useCallback(() => setMobileOpen(false), []);
+
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
 
   const navLinks = [
     { href: "#collection", label: navigation.shopLabel },
@@ -20,32 +39,52 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-whisper bg-cream/95 backdrop-blur-md">
+    <header
+      className={`sticky top-0 z-40 transition-all duration-500 ${
+        scrolled
+          ? "border-b border-whisper bg-cream/98 shadow-luxury-md backdrop-blur-xl"
+          : "border-b border-transparent bg-cream/90 backdrop-blur-md"
+      }`}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="font-serif text-xl tracking-[0.15em] text-charcoal transition-colors hover:text-champagne md:text-2xl"
+          className="group relative font-serif text-xl tracking-[0.15em] text-charcoal transition-colors hover:text-champagne md:text-2xl"
           aria-label={`${brand.name} home`}
         >
-          {brand.name}
+          <span className="relative">
+            {brand.name}
+            <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-champagne transition-all duration-500 group-hover:w-full" />
+          </span>
         </Link>
 
         <nav
-          className="hidden items-center gap-8 lg:flex"
+          className="hidden items-center gap-10 lg:flex"
           aria-label="Main navigation"
         >
-          {navLinks.map((link) => (
+          {navLinks.map((link, i) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-xs uppercase tracking-[0.2em] text-charcoal/70 transition-colors hover:text-champagne"
+              className="group relative text-xs uppercase tracking-[0.2em] text-charcoal/70 transition-colors hover:text-champagne"
+              style={{ transitionDelay: `${i * 30}ms` }}
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-champagne transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
+          <a
+            href={`tel:${contact.phone.replace(/\D/g, "")}`}
+            className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-charcoal/50 transition-colors hover:text-champagne"
+            aria-label={`Call ${brand.name} concierge`}
+          >
+            <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+            {contact.phone}
+          </a>
+          <div className="h-6 w-px bg-whisper" aria-hidden="true" />
           <VIPSchedulerModal
             trigger={
               <Button variant="outline" size="sm">
@@ -57,10 +96,10 @@ export function Header() {
 
         <button
           type="button"
-          className="flex min-h-12 min-w-12 items-center justify-center lg:hidden"
+          className="relative z-50 flex min-h-12 min-w-12 items-center justify-center lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-expanded={mobileOpen}
-          aria-controls="mobile-nav"
+          aria-controls="mobile-nav-drawer"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           {mobileOpen ? (
@@ -71,36 +110,75 @@ export function Header() {
         </button>
       </div>
 
-      {mobileOpen && (
-        <nav
-          id="mobile-nav"
-          className="border-t border-whisper bg-cream px-4 py-6 lg:hidden"
-          aria-label="Mobile navigation"
-        >
-          <ul className="space-y-4">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="block min-h-12 py-3 text-sm uppercase tracking-[0.2em] text-charcoal"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <VIPSchedulerModal
-                trigger={
-                  <Button variant="champagne" className="w-full">
-                    {navigation.conciergeLabel}
-                  </Button>
-                }
-              />
-            </li>
-          </ul>
-        </nav>
-      )}
+      <AnimatePresence>
+        {mobileOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 z-40 bg-onyx/50 backdrop-blur-sm lg:hidden"
+              onClick={closeNav}
+              aria-hidden="true"
+            />
+            <motion.nav
+              id="mobile-nav-drawer"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 30, stiffness: 300 }}
+              className="fixed inset-y-0 right-0 z-40 w-[85vw] max-w-sm border-l border-whisper bg-cream shadow-luxury-drawer lg:hidden"
+              aria-label="Mobile navigation"
+            >
+              <div className="flex h-full flex-col pt-24 pb-8">
+                <div className="flex-1 overflow-y-auto px-6">
+                  <ul className="space-y-1">
+                    {navLinks.map((link, i) => (
+                      <motion.li
+                        key={link.href}
+                        initial={{ opacity: 0, x: 24 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.1 + i * 0.05, ease: [0.22, 1, 0.36, 1] }}
+                      >
+                        <Link
+                          href={link.href}
+                          className="group flex items-center justify-between border-b border-whisper/50 py-5 text-lg uppercase tracking-[0.15em] text-charcoal transition-colors hover:text-champagne"
+                          onClick={closeNav}
+                        >
+                          {link.label}
+                          <ChevronRight className="h-4 w-4 text-charcoal/30 transition-all group-hover:translate-x-1 group-hover:text-champagne" />
+                        </Link>
+                      </motion.li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-8 space-y-4">
+                    <div className="h-px bg-gradient-to-r from-transparent via-whisper to-transparent" />
+                    <a
+                      href={`tel:${contact.phone.replace(/\D/g, "")}`}
+                      className="flex items-center gap-3 py-3 text-sm text-charcoal/60 transition-colors hover:text-champagne"
+                    >
+                      <Phone className="h-4 w-4 text-champagne" aria-hidden="true" />
+                      {contact.phone}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="border-t border-whisper px-6 pt-6">
+                  <VIPSchedulerModal
+                    trigger={
+                      <Button variant="champagne" className="w-full">
+                        {navigation.conciergeLabel}
+                      </Button>
+                    }
+                  />
+                </div>
+              </div>
+            </motion.nav>
+          </>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

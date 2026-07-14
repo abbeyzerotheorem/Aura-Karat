@@ -10,32 +10,34 @@ import {
 import { MotionWrapper } from "@/components/shared/MotionWrapper";
 
 export function FAQSection() {
-  const { faqs } = jewelryConfig;
+  const { faqs, sections } = jewelryConfig;
 
   return (
     <section
       id="faq"
-      className="py-20 md:py-28"
+      className="py-24 md:py-32"
       aria-labelledby="faq-heading"
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <MotionWrapper className="text-center">
           <p className="text-[10px] uppercase tracking-[0.3em] text-champagne">
-            Questions Answered
+            {sections.faq.eyebrow}
           </p>
           <h2
             id="faq-heading"
-            className="mt-3 font-serif text-3xl font-light tracking-wide text-charcoal md:text-4xl"
+            className="mt-4 font-serif text-4xl font-light tracking-wide text-charcoal md:text-5xl"
           >
-            Frequently Asked
+            {sections.faq.title}
           </h2>
         </MotionWrapper>
 
-        <MotionWrapper className="mt-12" delay={0.15}>
+        <MotionWrapper className="mt-14" delay={0.15}>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq) => (
               <AccordionItem key={faq.id} value={faq.id}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  {faq.question}
+                </AccordionTrigger>
                 <AccordionContent>{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
