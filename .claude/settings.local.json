@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -sL http://localhost:3457/)",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1605100804763-247d67f77de9?w=400\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1617032215425-0d7d7b8b8b8b?w=400\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1524592314907-9b3d7b8b8b8b?w=400\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1452860600605-9556e4d4d138?w=400\")",
+      "Bash(curl -sI \"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400\")"
+    ]
+  }
+}
