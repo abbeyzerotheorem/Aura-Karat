@@ -1,4 +1,3 @@
-import { LuxuryBanner } from "@/components/layout/LuxuryBanner";
 import { Header } from "@/components/layout/Header";
 import { Footer, MobileConciergeRibbon } from "@/components/layout/Footer";
 import { PageReveal } from "@/components/shared/MotionWrapper";
@@ -15,7 +14,6 @@ import { FAQSection } from "@/sections/FAQSection";
 export default function Home() {
   return (
     <PageReveal>
-      <LuxuryBanner />
       <Header />
       <main id="main-content">
         <HeroSection />

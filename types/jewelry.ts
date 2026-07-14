@@ -110,6 +110,12 @@ export type JewelryConfig = {
     imagePath: string;
     lifestyleImagePath: string;
     videoPosterPath: string;
+    subtextLabel: string;
+    subtextDescription: string;
+    socialProofText: string;
+    socialProofCount: string;
+    featuredProductTitle: string;
+    featuredProductImage: string;
   };
   heritage: {
     imagePath: string;
@@ -134,6 +140,11 @@ export type JewelryConfig = {
     bespokeLabel: string;
     heritageLabel: string;
     conciergeLabel: string;
+    homeLabel: string;
+    aboutLabel: string;
+    collectionsLabel: string;
+    pagesLabel: string;
+    contactLabel: string;
   };
   footer: {
     newsletterTitle: string;

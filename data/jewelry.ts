@@ -39,17 +39,25 @@ export const jewelryConfig: JewelryConfig = {
   },
 
   hero: {
-    headline: "Heirlooms for the Modern Era",
+    headline: "Our Luxury Collections",
     subheadline:
       "Hand-finished fine jewelry where centuries-old bench craft meets contemporary design. Each piece is assayed, certified, and destined to become your family's next chapter.",
-    primaryCta: "Shop the Collection",
+    primaryCta: "Let's Get Started",
     secondaryCta: "Bespoke Creations",
     imagePath:
-      "https://images.unsplash.com/photo-1605100804763-247d67f77de9?w=1200&h=1500&fit=crop&q=85",
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1200&h=1500&fit=crop&q=85",
     lifestyleImagePath:
       "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&h=900&fit=crop&q=85",
     videoPosterPath:
       "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200&h=800&fit=crop&q=85",
+    subtextLabel: "// Aura & Karat Jewelry Store",
+    subtextDescription:
+      "Discover our curated collections of handcrafted fine jewelry, featuring ethically sourced gemstones and recycled precious metals from our Madison Avenue atelier.",
+    socialProofText: "Happy Clients",
+    socialProofCount: "230K",
+    featuredProductTitle: "Beautiful In Every Detail",
+    featuredProductImage:
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=400&fit=crop&q=85",
   },
 
   heritage: {
@@ -603,6 +611,11 @@ export const jewelryConfig: JewelryConfig = {
     bespokeLabel: "Bespoke",
     heritageLabel: "Heritage",
     conciergeLabel: "Concierge",
+    homeLabel: "Home",
+    aboutLabel: "About Us",
+    collectionsLabel: "Collections",
+    pagesLabel: "Pages",
+    contactLabel: "Contact Us",
   },
 
   footer: {
