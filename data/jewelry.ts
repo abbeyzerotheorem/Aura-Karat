@@ -64,7 +64,7 @@ export const jewelryConfig: JewelryConfig = {
         title: "Engagement & Bridal",
         subtitle: "Symbols of forever, sculpted in light",
         imagePath:
-          "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=1000&fit=crop&q=85",
+          "/engagement-bridal.jpeg",
         href: "#collection",
         span: "wide",
       },
@@ -73,7 +73,7 @@ export const jewelryConfig: JewelryConfig = {
       title: "Fine Rings",
       subtitle: "Sculptural bands for every gesture",
       imagePath:
-        "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&h=800&fit=crop&q=85",
+        "/fine-rings.jpeg",
       href: "#collection",
       span: "default",
     },
@@ -82,7 +82,7 @@ export const jewelryConfig: JewelryConfig = {
       title: "Necklaces & Pendants",
       subtitle: "Light captured at the collarbone",
       imagePath:
-        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=800&fit=crop&q=85",
+        "/necklaces-pendants.jpeg",
       href: "#collection",
       span: "tall",
     },
@@ -91,7 +91,7 @@ export const jewelryConfig: JewelryConfig = {
       title: "Bespoke Custom Design",
       subtitle: "Your vision, rendered in precious metal",
       imagePath:
-        "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=600&fit=crop&q=85",
+        "/bespoke-custom.jpeg",
       href: "#bespoke",
       span: "wide",
     },
@@ -147,7 +147,7 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&h=1000&fit=crop&q=85",
+          "/Cathedral-Solitaire.jpeg",
         hover:
           "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&h=1000&fit=crop&q=85",
         alt: "Elara Solitaire Ring in yellow gold with brilliant-cut diamond",
@@ -202,7 +202,7 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&h=1000&fit=crop&q=85",
+          "/CelestePendant.jpeg",
         hover:
           "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&h=1000&fit=crop&q=85",
         alt: "Celeste Pendant Necklace with sapphire center stone",
@@ -257,7 +257,7 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&h=1000&fit=crop&q=85",
+          "/Micro-pavé.avif",
         hover:
           "/heritage.jpeg",
         alt: "Aurora Eternity Band with micro-pavé diamonds",
@@ -312,7 +312,7 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&h=1000&fit=crop&q=85",
+          "/Signet.jpeg",
         hover:
           "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=1000&fit=crop&q=85",
         alt: "Heritage Signet Ring in yellow gold",
@@ -367,7 +367,7 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: false,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&h=1000&fit=crop&q=85",
+          "/Earrings.jpeg",
         hover:
           "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&h=1000&fit=crop&q=85",
         alt: "Lumière Drop Earrings with South Sea pearls",
@@ -402,7 +402,7 @@ export const jewelryConfig: JewelryConfig = {
       isBespokeOnly: true,
       imagePaths: {
         primary:
-          "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&h=1000&fit=crop&q=85",
+          "/Bespoke.jpeg",
         hover:
           "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=800&h=1000&fit=crop&q=85",
         alt: "Bespoke custom jewelry design process",
@@ -417,7 +417,7 @@ export const jewelryConfig: JewelryConfig = {
       description:
         "Share heirlooms, sketches, or simply a feeling. Our lead designer translates your story into initial concept drawings during a private consultation.",
       imagePath:
-        "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=600&h=400&fit=crop&q=85",
+        "/Inspiration.jpeg",
     },
     {
       step: 2,
@@ -425,7 +425,7 @@ export const jewelryConfig: JewelryConfig = {
       description:
         "Photorealistic renders let you examine every angle, prong, and proportion before a single gram of metal is cast. Unlimited revisions until perfection.",
       imagePath:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&q=85",
+        "/3D-CAD-Render.jpeg",
     },
     {
       step: 3,
@@ -433,7 +433,7 @@ export const jewelryConfig: JewelryConfig = {
       description:
         "Your piece is cast, hand-set, and bench-finished by our master jewelers over 4–6 weeks. Each stage is documented and shared with you.",
       imagePath:
-        "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=600&h=400&fit=crop&q=85",
+        "/Master-Crafting.jpeg",
     },
     {
       step: 4,
@@ -441,7 +441,7 @@ export const jewelryConfig: JewelryConfig = {
       description:
         "Presented in our signature lacquered case with assay certificate, GIA documentation, and lifetime warranty—delivered by insured courier or collected in-store.",
       imagePath:
-        "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&h=400&fit=crop&q=85",
+        "/White-Glove-Delivery.jpeg",
     },
   ],
 
@@ -616,7 +616,7 @@ export const jewelryConfig: JewelryConfig = {
       "handcrafted jewelry",
     ],
     ogImage:
-      "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=1200&h=630&fit=crop&q=85",
+      "/Luxury.jpeg",
   },
 
   sections: {
@@ -686,7 +686,7 @@ export const jewelryConfig: JewelryConfig = {
       title: "Choose The Type!",
       subtitle: "Explore our curated categories to find the perfect piece that speaks to your style and story.",
       imagePath:
-        "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=800&h=1000&fit=crop&q=85",
+        "/choose-type.jpeg",
       categories: [
         { label: "Ring", href: "#collection" },
         { label: "Necklace", href: "#collection" },
