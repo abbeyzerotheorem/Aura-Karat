@@ -23,7 +23,7 @@ export const jewelryConfig: JewelryConfig = {
   contact: {
     boutiqueAddress: "742 Madison Avenue, Suite 12",
     city: "New York, NY 10065",
-    phone: "+1 (212) 555-0147",
+    phone: "+27 (0) 84317-1229",
     email: "concierge@auraandkarat.com",
     storeHours: [
       { day: "Monday", hours: "10:00 AM – 6:00 PM" },

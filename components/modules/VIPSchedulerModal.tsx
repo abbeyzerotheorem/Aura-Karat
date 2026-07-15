@@ -186,7 +186,7 @@ export function VIPSchedulerModal({
           name="phone"
           type="tel"
           required
-          placeholder="+1 (212) 555-0000"
+          placeholder="+27 (0) 84317-1229"
           value={formData.phone}
           onChange={handleChange("phone")}
         />

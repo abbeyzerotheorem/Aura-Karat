@@ -231,9 +231,8 @@ The site includes comprehensive SEO optimization:
 
 This is a private project for Aura & Karat. For inquiries, contact:
 
-**Email**: concierge@auraandkarat.com  
-**Phone**: +1 (212) 555-0147  
-**Address**: 742 Madison Avenue, Suite 12, New York, NY 10065
+**Email**: zerotheorem01@gmail.com 
+**Phone**: +27 (0) 84317-1229  
 
 ## 📄 License
 
