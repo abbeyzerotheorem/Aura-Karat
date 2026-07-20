@@ -177,7 +177,7 @@ export function HeroSection() {
               src={hero.imagePath}
               alt={`${brand.name} model wearing elegant jewelry`}
               fill
-              sizes="60vw"
+              sizes="(min-width: 1280px) 58vw, (min-width: 1024px) 55vw, 1px"
               className="object-cover"
               priority
             />
@@ -204,7 +204,7 @@ export function HeroSection() {
             src={hero.imagePath}
             alt={`${brand.name} model wearing elegant jewelry`}
             fill
-            sizes="100vw"
+            sizes="(min-width: 1024px) 1px, 100vw"
             className="object-cover"
             priority
           />
